@@ -1,0 +1,7 @@
+{
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.format.enable": true,
+  "editor.rulers": [100, 120]
+}
