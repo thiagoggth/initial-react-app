@@ -1,8 +1,6 @@
 import { Button } from '@material-ui/core';
 import styled from 'styled-components';
 
-type buttonAttr = { background?: string; hoverColor?: string };
-
 export const HomeWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -12,8 +10,13 @@ export const HomeWrapper = styled.div`
   background-color: #424040;
 
   h1 {
+    text-align: center;
     font-size: 16px;
     margin-bottom: 10px;
+  }
+
+  label.input-label {
+    font-size: 14px;
   }
 
   .MuiCard-root {
@@ -31,6 +34,7 @@ export const HomeWrapper = styled.div`
     .MuiOutlinedInput-root {
       width: 100%;
       font-size: 12px;
+      margin-top: 4px;
       margin-bottom: 10px;
     }
 
@@ -44,16 +48,15 @@ export const HomeWrapper = styled.div`
   }
 `;
 
-export const CardButtons = styled(Button)<buttonAttr>`
+export const CardButtons = styled(Button)`
   &.MuiButton-root {
     font-size: 10px;
     color: white;
     transition: all ease-in-out 0.2s;
-    background-color: ${({ background }) => background || 'transparente'};
-    ${({ hoverColor }) => !hoverColor && `pointer-events: none;`}
+    background-color: #06b706;
 
     &:hover {
-      ${({ hoverColor }) => hoverColor && `background-color: ${hoverColor};`}
+      background-color: green;
     }
   }
 `;
