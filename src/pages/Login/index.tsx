@@ -22,7 +22,7 @@ const Login = () => {
     <S.HomeWrapper>
       <Card>
         <form onSubmit={handleLogin}>
-          <h1>Login page</h1>
+          <h1>Login</h1>
           <label className="input-label">Username</label>
           <OutlinedInput name="username" onChange={(e) => (username = e.target.value)} />
           <label className="input-label">Password</label>
